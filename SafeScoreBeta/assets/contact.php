@@ -20,7 +20,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "contactformtestgg@gmail.com";
+        $recipient = "contact@gosafescore.com";
 
         // Set the email subject.
         $subject = "$subject";

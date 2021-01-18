@@ -2282,7 +2282,8 @@ p {
   padding: 10px 0;
   background: -webkit-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
   background: -o-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
-  background: linear-gradient(to right, #0067f4 0%, #2bdbdc 100%); }
+  background: linear-gradient(to right, #0067f4 0%, #2bdbdc 100%); 
+}
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-area .navbar-area {
       padding: 10px 0; } }
@@ -2291,7 +2292,10 @@ p {
       padding: 10px 0; } }
   .header-area .navbar-area.sticky {
     position: fixed;
-    background-color: #0067f4;
+    color: #003366;
+    background: -webkit-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
+    background: -o-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
+    background: linear-gradient(to right, #0067f4 0%, #2bdbdc 100%); 
     padding: 5px 0; }
   .header-area .navbar-area .navbar {
     position: relative;
@@ -2613,8 +2617,20 @@ p {
 .header-area .header-content-area {
   background: -webkit-linear-gradient(#deebfd 0%, rgba(255, 255, 255, 0) 100%);
   background: -o-linear-gradient(#deebfd 0%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(#deebfd 0%, rgba(255, 255, 255, 0) 100%); }
-  .header-area .header-content-area .header-content {
+  background: linear-gradient(#deebfd 0%, rgba(255, 255, 255, 0) 100%); 
+  height: 110vh;
+  /* background: url("../images/header-image-8.svg") no-repeat bottom right;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  }
+    .header-area .header-content-area .header-content {
     padding-top: 220px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .header-area .header-content-area .header-content {
@@ -2625,6 +2641,8 @@ p {
     @media (max-width: 767px) {
       .header-area .header-content-area .header-content {
         padding-top: 120px; } }
+
+/* HEADER FONT SIZES */
     .header-area .header-content-area .header-content .header-title {
       font-size: 44px;
       line-height: 55px;
@@ -2643,18 +2661,22 @@ p {
       line-height: 24px;
       color: #6c6c6c;
       margin-top: 8px; }
-    .header-area .header-content-area .header-content .header-newslatter {
+
+/* HEADER POSITIONING & SIZE */
+    .header-newslatter {
       max-width: 410px;
       position: relative;
       margin: 0 auto;
-      margin-top: 40px; }
-      .header-area .header-content-area .header-content .header-newslatter i {
+      margin-top: 40px; 
+      padding-bottom: 40px;
+    }
+    .header-newslatter i {
         position: absolute;
         top: 12px;
         left: 20px;
         font-size: 24px;
         color: #0067f4; }
-      .header-area .header-content-area .header-content .header-newslatter input {
+    .header-newslatter input {
         width: 100%;
         height: 48px;
         padding-left: 60px;
@@ -2664,29 +2686,29 @@ p {
         font-size: 16px;
         font-weight: 600;
         color: #6c6c6c; }
-        .header-area .header-content-area .header-content .header-newslatter input:focus {
+      .header-newslatter input:focus {
           border-color: #0067f4; }
-      .header-area .header-content-area .header-content .header-newslatter .header-btn {
+      .header-newslatter .header-btn {
         position: absolute;
         top: 0;
         right: 0; }
         @media (max-width: 767px) {
-          .header-area .header-content-area .header-content .header-newslatter .header-btn {
+      .header-newslatter .header-btn {
             position: relative;
             margin-top: 10px; } }
         @media only screen and (min-width: 576px) and (max-width: 767px) {
-          .header-area .header-content-area .header-content .header-newslatter .header-btn {
+        .header-newslatter .header-btn {
             position: absolute;
             margin-top: 0; } }
-        .header-area .header-content-area .header-content .header-newslatter .header-btn .main-btn {
+        .header-newslatter .header-btn .main-btn {
           border: 0;
           line-height: 48px;
           border-radius: 50px; }
           @media (max-width: 767px) {
-            .header-area .header-content-area .header-content .header-newslatter .header-btn .main-btn {
+          .header-newslatter .header-btn .main-btn {
               width: 100%; } }
           @media only screen and (min-width: 576px) and (max-width: 767px) {
-            .header-area .header-content-area .header-content .header-newslatter .header-btn .main-btn {
+           .header-newslatter .header-btn .main-btn {
               width: auto; } }
   @media (max-width: 767px) {
     .header-area .header-content-area .header-image {
@@ -2695,12 +2717,13 @@ p {
     width: 100%; }
     @media (max-width: 767px) {
       .header-area .header-content-area .header-image img {
-        height: 160px;
+        height: 100vh;
         object-fit: cover;
         object-position: center; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
       .header-area .header-content-area .header-image img {
-        height: 200px; } }
+        height: 100vh; 
+      } }
 
 /*===========================
       17.ABOUT css 
@@ -2839,7 +2862,9 @@ p {
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s; }
+  
   .single-features .features-title a {
+    text-transform: capitalize;
     font-size: 24px;
     line-height: 30px;
     font-weight: 600;
@@ -2936,7 +2961,7 @@ p {
     top: 0;
     left: -45px;
     width: 140px;
-    opacity: 0.5; }
+    opacity: 0.5;  }
   .pricing .pricing-list {
     margin-top: 40px; }
     .pricing .pricing-list ul li {
@@ -3041,6 +3066,7 @@ p {
        25.CLIENT css 
 ===========================*/
 .single-client img {
+  vertical-align: middle;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: all 0.3s ease-out 0s;
@@ -3170,7 +3196,7 @@ p {
       margin-top: 16px; }
 
 /*===========================
-    22.HEADER css 
+    22.FOOTER css 
 ===========================*/
 .footer-area {
   background-color: #f4f6f7;
@@ -3257,3 +3283,74 @@ p {
   .back-to-top:hover {
     color: #fff;
     background-color: #005ad5; }
+
+
+/*======= ROWAN STYLE CHANGES =======*/
+
+ .header-banner {
+  padding-top: 25vh;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  display: inline-flex;
+}
+
+/* .banner-cta {
+  margin-top:20vh;
+  margin-bottom: 50vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1.5px solid #6c6c6c;
+  background: hsla(0,0%,100%,.9);
+  border-radius: 15px;
+} */
+
+ .carousel-item {
+  width: 100%;
+  color: #a8b0b3;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+  background: hsla(0,0%,100%,.9);
+  border-radius: 15px;
+} 
+
+.carousel-image {
+float: left;
+max-height: 150px;
+}
+
+.carousel-text {
+float: left;
+text-align: center;
+}
+
+.navbar-logo {
+  height: 50px;
+  margin-left: 5px;
+}
+
+.btn-outline-light {
+  background-color: #3ba7e6;
+}
+
+@media (min-width: 767px) {
+
+.carousel-image {
+  float: left;
+  max-height: 250px;
+  }
+
+  .carousel-text {
+    float: left;
+    text-align: left;
+    margin-top: 50px;
+    }
+
+
+
+
+}
