@@ -1641,7 +1641,7 @@ p {
   @media (max-width: 767px) {
     .lg-btn {
       font-size: 16px;
-      ine-height: 52px; } }
+      line-height: 52px; } }
 
 .el-btn {
   line-height: 80px !important;
@@ -2841,7 +2841,7 @@ p {
 /*===========================
     2.HEADER css 
 ===========================*/
-.single-features {
+/* .single-features {
   position: relative;
   background-color: #fff;
   padding: 32px 45px;
@@ -2899,7 +2899,7 @@ p {
   .single-features:hover .features-title a {
     color: #fff; }
   .single-features:hover .text {
-    color: #fff; }
+    color: #fff; } */
 
 /*===========================
       16.PRICING css 
@@ -2938,6 +2938,13 @@ p {
     line-height: 80px;
     margin-top: 32px;
     color: #fff; }
+    .pricing .pricing-header .price-coming-soon {
+      display: block;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 80px;
+      margin-top: 32px;
+      color: #fff; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .pricing .pricing-header .price {
         font-size: 50px;
@@ -3201,7 +3208,8 @@ p {
 .footer-area {
   background-color: #f4f6f7;
   padding-top: 90px;
-  padding-bottom: 120px; }
+  padding-bottom: 120px;
+  margin-bottom: -120px; }
   .footer-area .social li {
     display: inline-block;
     margin: 0 5px; }
@@ -3288,7 +3296,7 @@ p {
 /*======= ROWAN STYLE CHANGES =======*/
 
  .header-banner {
-  padding-top: 25vh;
+  padding-top: 20vh;
   height: 40vh;
   align-items: center;
   justify-content: center;
@@ -3296,19 +3304,6 @@ p {
   text-align: center;
   display: inline-flex;
 }
-
-/* .banner-cta {
-  margin-top:20vh;
-  margin-bottom: 50vh;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border: 1.5px solid #6c6c6c;
-  background: hsla(0,0%,100%,.9);
-  border-radius: 15px;
-} */
-
  .carousel-item {
   width: 100%;
   color: #a8b0b3;
@@ -3350,7 +3345,31 @@ text-align: center;
     margin-top: 50px;
     }
 
+    .carousel-indicators {
+      margin-bottom: 25px;
+    }
+}
 
+.carousel-indicators {
+  margin-bottom: 60px;
+}
 
+.greyed-out {
+  opacity: 40%;
+}
 
+.feature-tile {
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 2px solid #f4f6f7; 
+}
+
+.feature-tile .text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #121212;
+  margin-top: 16px;
+  position: relative;
+  z-index: 5; 
 }
